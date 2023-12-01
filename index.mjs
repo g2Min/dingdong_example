@@ -1,7 +1,5 @@
 import express from 'express';
-// const express = require("express");
 import cors from "cors";
-// const cors = require("cors");
 
 const app = express();
 const port = 8080;
@@ -15,11 +13,6 @@ app.get("/", (req, res) => {
 // GET : params(:변수명), query(?키=밸류&q=soyeon&name=kong)
 // POST : params, body
 app.get("/sound/:name", (req, res) => {
-  // const q2 = req.query;
-  // console.log(q2);
-  // res.json({ userid: q2.id });
-  // const q1 = req.params;
-  // res.send(`Hello ${q1.id}!`);
   const { name } = req.params;
 
   if (name == "dog") {
