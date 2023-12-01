@@ -4,7 +4,7 @@ import cors from "cors";
 // const cors = require("cors");
 
 const app = express();
-const port = 5000;
+const port = 8080;
 
 app.use(cors()); // 모든 요청에도 응답을 해주겠다.
 
